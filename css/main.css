@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+}
+
+#scene{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.bg img{
+    
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: scale(1.2);
+}
+.monster{
+    background-image: url(../image/sprite-img.png);
+    width: 371px;
+    height: 378px;
+    margin-left: 150px;
+    right: 0;
+}
+.cup{
+    background:url(../image/cup.png);
+    height: 740px;
+    width: 360px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: cup_spr 1.5s steps(16, end) infinite;
+    -webkit-animation: cup_spr 1.5s steps(16,end) infinite;
+}
+
+@keyframes cup_spr{
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 106.6667%;
+    }
+}
+
+@-webkit-keyframes cup_spr{
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 106.6667%;
+    }
+}
+
+.rise{
+    background-image: url(../image/rise.png);
+    width: 739px;
+    height: 220px;
+    left: 0;
+    right: 0;
+    margin: 480px auto 0;
+    
+}
